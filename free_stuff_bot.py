@@ -27,7 +27,7 @@ def free_stuff_bot(event, context):
     else:
         sys.exit(1)
 
-    msg_body = 'test\n*Free eBook*\n\n%s\n\n%s' % (title, PAGE_URL)
+    msg_body = '*Free eBook*\n\n%s\n\n%s' % (title, PAGE_URL)
 
     msg = {
         'text': msg_body
