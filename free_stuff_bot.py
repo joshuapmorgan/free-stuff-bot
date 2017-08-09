@@ -8,11 +8,11 @@ import requests
 
 PAGE_URL = 'https://www.packtpub.com/packt/offers/free-learning'
 PAGE_XPATH = '//*[@id="deal-of-the-day"]/div/div/div[2]/div[2]/h2/text()'
-USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 ' \
-    '(KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2597.57'
+USER_AGENT = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 ' 
+              '(KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2597.57')
 WEBHOOK_URL = os.environ['WEBHOOK_URL']
 
-def packtpub_free_learning(event, context):
+def free_stuff_bot(event, context):
     headers = {
         'User-Agent': USER_AGENT
     }
