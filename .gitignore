@@ -1,2 +1,4 @@
 deploy/*
 deploy.zip
+*.py[cod]
+.chalice/
